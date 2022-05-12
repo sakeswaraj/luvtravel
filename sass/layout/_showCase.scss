@@ -1,0 +1,33 @@
+/* seawaves on video */
+.showcase {
+    width: 100;
+    height: 100vh;
+    position: relative;
+    video {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+    &--title {
+      width: 70%;
+      height: 70%;
+      background: rgba($color-black, 0.897);
+      font-size: 15rem;
+      color: $color-white;
+      text-transform: uppercase;
+      mix-blend-mode: multiply;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      /*element's content should blend with the content of the element'sparentandtheelement'sbackground.*/
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+    }
+  }
