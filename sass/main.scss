@@ -8,10 +8,12 @@
 @import "base/utilities";
 
 @import "components/button";
+@import "components/composition";
 
 @import "layout/header";
 @import "layout/showCase";
 @import "layout/logoBox";
 @import "layout/navigation";
 @import "layout/grid";
+@import "./pages/home";
 // the order of imports is important
