@@ -19,5 +19,8 @@
   "homepage": "https://github.com/sakeswaraj/luvtravel#readme",
   "devDependencies": {
     "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.8.2"
   }
 }
