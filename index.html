@@ -29,7 +29,27 @@
           <a href="./secondary.html"
             ><li class="header__menu-items">contact</li></a
           >
+          <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natous</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benfits</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+                    </ul>
+            </nav>
+        </div>
         </ul>
+       
       </nav>
       <div class="header__text-box">
         <h1 class="heading-primary">
@@ -46,7 +66,7 @@
         ><span class="small-box"></span>
       </div>
     </header>
-    <main>
+    <main class="main--content">
       <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
@@ -109,7 +129,6 @@
               </p>
             </div>
           </div>
-          
 
           <div class="col-1-of-4">
             <div class="feature-box">
@@ -386,5 +405,42 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Carrers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built by <a href="#" class="footer__link">Sake Swaraj</a> for his
+            online course
+            <a href="#" class="footer__link">Advanced CSS and Sass</a>.
+            Copyright &copy; by Jonas Schmedtmann.
+          </p>
+        </div>
+      </div>
+      <p class="u-center-text">Made with &nbsp 💌 by Sake Swaraj</p>
+    </footer>
   </body>
 </html>
