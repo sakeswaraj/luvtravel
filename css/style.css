@@ -133,6 +133,10 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1.4s;
     animation-timing-function: ease-in-out; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--main {
+        font-size: 4rem;
+        letter-spacing: 1.8rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 4rem;
@@ -141,6 +145,10 @@ body {
     animation-name: moveInRight;
     animation-duration: 1.4s;
     animation-timing-function: ease-in-out; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub {
+        font-size: 2rem;
+        letter-spacing: 0rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -153,6 +161,12 @@ body {
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.4rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -536,7 +550,7 @@ body {
   height: 95vh;
   background-image: linear-gradient(to right top, rgba(126, 213, 111, 0.3), rgba(40, 180, 133, 0.4)), url("../img/nat-1-large.jpg");
   background-position: center;
-  background-blend-mode: screen;
+  background-blend-mode: luminosity;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   padding: 1rem 5rem;
@@ -619,7 +633,17 @@ body {
   top: 30%;
   left: 20%;
   opacity: 0.5;
-  z-index: -100; }
+  z-index: 5; }
+  @media only screen and (max-width: 56.25em) {
+    .logo-box--container {
+      top: 35%;
+      grid-template-columns: repeat(3, 7rem);
+      grid-template-rows: repeat(3, 7rem); } }
+  @media only screen and (max-width: 37.5em) {
+    .logo-box--container {
+      top: 25%;
+      grid-template-columns: repeat(3, 4rem);
+      grid-template-rows: repeat(3, 4rem); } }
   .logo-box--container span.small-box {
     display: block;
     background-color: #0ec4ca;
@@ -852,24 +876,30 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
   .row .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
   .row .col-1-of-5 {
     width: calc((100% - 4 * 6rem) / 5); }
   .row .col-3-of-5 {
-    width: calc(3 * ((100% - 4 * 6rem) / 5) + 2 * 6rem); }
+    width: calc( 3 * ((100% - 4 * 6rem) / 5) + 2 * 6rem); }
   .row .col-2-of-5 {
-    width: calc(2 * ((100% - 4 * 6rem) / 5) + 1 * 6rem); }
+    width: calc( 2 * ((100% - 4 * 6rem) / 5) + 1 * 6rem); }
 
 .footer {
   background-color: #333;

@@ -12,7 +12,17 @@
     top: 30%;
     left: 20%;
     opacity: 0.5;
-    z-index: -100;
+    z-index: 5;
+    @include respond(tab-port){
+      top: 35%;
+      grid-template-columns: repeat(3, 7rem);
+      grid-template-rows: repeat(3, 7rem);
+    }
+    @include respond(phone){
+      top: 25%;
+      grid-template-columns: repeat(3, 4rem);
+      grid-template-rows: repeat(3, 4rem);
+    }
   
     span.small-box {
       display: block;
