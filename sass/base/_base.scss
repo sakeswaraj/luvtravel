@@ -7,14 +7,32 @@
 }
 html {
   font-size: 62.5%;
-  /*16 px === 1 rem */
+  /*16 px === 1 rem 
+  the order of declarations matters 
+  */
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
 }
 
 body {
   font-family: "Lato", "Courier New", Courier, monospace;
   font-weight: 400;
-  font-size: 1.6rem;
   line-height: 1.7;
   color: $color-dark-grey;
   padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 1rem;
+}
 }
